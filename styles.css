@@ -1,0 +1,71 @@
+.button:hover {
+    background-color: #0056b3;
+    color: white
+}
+/* hover - эффект или стиль который виден при наведении на элемент курсором */
+
+.input:focus {
+    outline: none;
+    border-color: #007bff;
+}
+/* focus - эффект который виден когда элемент в фокусе(или нажал на него) */
+/* оба хороши для улучшения пользовательского опыта */
+
+.list {
+   list-style: none;
+   padding: 0;
+}
+
+.list__item {
+   padding: 10px;
+   border: 1px solid #ccc;
+   margin-bottom: 5px;
+}
+
+.list__item:first-child {
+    background-color: #11f224;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+/* первый элемент в контейнере, списке или в любом другом обьекте с элементами */
+
+.list__item:last-child {
+    background-color: #cd0d0d;
+    font-style: italic;
+    font-size: 0.9em;
+}
+/* Последний элемент в контейнере, списке или в любом другом обьекте с элементами */
+
+.container {
+    max-width: 800px;
+    border: 1px solid #000000;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.container-element-a:hover {
+    color: #ff0000;
+}
+
+.container-element:focus {
+    outline: none;
+    color: #061006;
+}
+
+.container-element:nth-child(odd) {
+    font-style: italic;
+    color:rgb(104, 104, 104)
+}
+/* n-th child позволяет самому выбрать элемент на котором будет применяться стиль, будь то четный, нечетный или любой другой */
+
+.content-block:first-child:hover {
+    background-color: #fef08a;
+    color: #a16207;
+}
+/* Здесь комбинация: первый элемент будет иметь псевдокласс hover */
+
+.content-block:last-child:focus {
+    background-color: #bbf7d0;
+    color: #166534;
+}
+/* Тоже комбинация: последний элемент будет иметь псевдокласс focus */
