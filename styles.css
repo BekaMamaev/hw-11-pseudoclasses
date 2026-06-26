@@ -58,14 +58,17 @@
 }
 /* n-th child позволяет самому выбрать элемент на котором будет применяться стиль, будь то четный, нечетный или любой другой */
 
-.content-block:first-child:hover {
+.content-block *:first-child:hover {
+    font-style: italic;
     background-color: #fef08a;
     color: #a16207;
 }
 /* Здесь комбинация: первый элемент будет иметь псевдокласс hover */
 
-.content-block:last-child:focus {
+.content-block *:last-child:focus {
+    font-style: italic;
     background-color: #bbf7d0;
     color: #166534;
+    outline: none;
 }
 /* Тоже комбинация: последний элемент будет иметь псевдокласс focus */
